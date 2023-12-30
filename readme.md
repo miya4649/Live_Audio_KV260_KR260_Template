@@ -8,6 +8,8 @@ The project is executed in stand-alone (bare metal) mode.
 
 The development environment supports Vitis / Vivado 2023.2 or later.
 
+https://github.com/miya4649/Live_Audio_KV260_KR260_Template/assets/11752987/6a8df6ab-39c3-4977-8055-d6f61f38b995
+
 ## Usage
 
 By default, a project is generated for KV260; for KR260, replace "set board_type kv260" in vivado.tcl with "set board_type kr260".
