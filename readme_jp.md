@@ -8,6 +8,8 @@ AMD (Xilinx) Kria KV260, KR260用Live Audio サンプル・プロジェクト
 実行はスタンド・アローン（ベアメタル）モードで行います。
 開発環境はVitis / Vivado 2023.2 以降に対応しています。
 
+https://github.com/miya4649/Live_Audio_KV260_KR260_Template/assets/11752987/6a8df6ab-39c3-4977-8055-d6f61f38b995
+
 ## 使用方法
 
 デフォルトではKV260用のプロジェクトが生成されます。KR260の場合は、vivado.tclの「set board_type kv260」を「set board_type kr260」に書き換えます。
