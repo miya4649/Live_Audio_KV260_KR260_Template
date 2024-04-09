@@ -24,25 +24,11 @@ $ source "Vitis installation path"/settings64.sh
 
 $ cd "Path of this directory"
 
-$ make vivado
-
-(Create a Vivado project)
-
-$ make vivado-run
-
-(Synthesis, Implement, Export HW)
-
-$ make vitis
-
-(Create and build a Vitis Unified IDE project)
-
-Or
-
 $ make
 
-(Do all three of the above at once)
+(The entire process is executed at once.)
 
-Start the Vitis Unified IDE,
+Next, start the Vitis Unified IDE,
 
 "File": "Open Workspace",
 
@@ -74,9 +60,7 @@ $ source vivado-run.tcl
 
 This will generate a Vivado project under the project_1 directory, Bitstream generation and export of XSA files with bitstreams will be performed.
 
-### For Vitis Unified IDE
-
-In Vitis Unified IDE Terminal,
+Next, start Vitis Unified IDE and on its Terminal,
 
 $ pwd
 

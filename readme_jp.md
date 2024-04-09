@@ -24,25 +24,9 @@ $ source Vitisのインストールパス/settings64.sh
 
 $ cd このディレクトリのパス
 
-$ make vivado
-
-(Vivadoプロジェクトの作成)
-
-$ make vivado-run
-
-(Synthesis, Implement, Export HW)
-
-$ make vitis
-
-(Vitis Unified IDEのプロジェクト作成、ビルド)
-
-もしくは
-
 $ make
 
-(上記の3つを一気に行います)
-
-Vitis Unified IDEを起動し、
+次に、Vitis Unified IDEを起動し、
 
 File: Open Workspaceで
 
@@ -54,9 +38,9 @@ FLOW: Component で Project_1_appを選択、
 
 FLOW: Run で実行します。
 
-### VivadoのTcl Consoleを使った方法
+### IDEを使った方法
 
-Vivadoを起動してメニュー: Window: Tcl Consoleで
+Vivadoを起動し、メニュー: Window: Tcl Consoleで
 
 pwd
 
@@ -74,9 +58,7 @@ source vivado-run.tcl
 
 これでVivadoのプロジェクトがproject_1ディレクトリ以下に生成され、ビットストリーム生成、ビットストリーム付きのXSAファイルのエクスポートが行われます。
 
-### Vitis Unified IDE の場合
-
-Vitis Unified IDEのTerminalで、
+次にVitis Unified IDEを起動し、そのTerminalで、
 
 $ pwd
 

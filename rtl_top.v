@@ -180,7 +180,20 @@ module rtl_top
 
   vga_iface
     #(
-      .PIXEL_DELAY(2),
+      .VGA_MAX_H (1650-1),
+      .VGA_MAX_V (750-1),
+      .VGA_WIDTH (1280),
+      .VGA_HEIGHT (720),
+      .VGA_SYNC_H_START (1390),
+      .VGA_SYNC_V_START (725),
+      .VGA_SYNC_H_END (1430),
+      .VGA_SYNC_V_END (730),
+      .CLIP_ENABLE (0),
+      .CLIP_H_S (0),
+      .CLIP_H_E (1280),
+      .CLIP_V_S (0),
+      .CLIP_V_E (720),
+      .PIXEL_DELAY (2),
       .BPP (24)
       )
   vga_iface_0
