@@ -136,8 +136,7 @@ module rtl_top
     (
      .data_in (count_line),
      .data_out (count_line_v),
-     .clk (clkv),
-     .reset (resetv)
+     .clk (clkv)
      );
 
   // draw color bar
