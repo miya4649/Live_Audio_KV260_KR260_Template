@@ -145,9 +145,9 @@ module rtl_top
       if (count_line_v == count_h)
         begin
           // draw white line
-          color_r = 255;
-          color_g = 255;
-          color_b = 255;
+          color_r <= 255;
+          color_g <= 255;
+          color_b <= 255;
         end
       else if (count_h < 256)
         begin
