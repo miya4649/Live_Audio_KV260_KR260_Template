@@ -15,7 +15,7 @@
 
 module rtl_top
   #(
-    parameter SAMPLING_RATE = 44100
+    parameter SAMPLE_FREQ = 48000
     )
   (
    input wire         clk,
@@ -218,8 +218,8 @@ module rtl_top
   wire [AUDIO_WIDTH*2-1:0]     sample_data;
   wire                         sample_full;
   reg                          sample_en;
-  localparam DECL = (1 << AUDIO_WIDTH) * 440 / SAMPLING_RATE;
-  localparam DECR = (1 << AUDIO_WIDTH) * 660 / SAMPLING_RATE;
+  localparam DECL = (1 << AUDIO_WIDTH) * 440 / SAMPLE_FREQ;
+  localparam DECR = (1 << AUDIO_WIDTH) * 660 / SAMPLE_FREQ;
 
   assign sample_data = {sample_l, sample_r};
 
@@ -249,7 +249,9 @@ module rtl_top
   xlive_audio
     #(
       .AUDIO_WIDTH (AUDIO_WIDTH),
-      .BUFFER_DEPTH (BUFFER_DEPTH)
+      .BUFFER_DEPTH (BUFFER_DEPTH),
+      .AES_MODE (0),
+      .SAMPLE_FREQ (SAMPLE_FREQ)
       )
   xlive_audio_0
     (

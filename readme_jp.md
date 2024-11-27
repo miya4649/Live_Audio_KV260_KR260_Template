@@ -28,7 +28,7 @@ $ make
 
 次に、Vitis Unified IDEを起動し、
 
-File: Open Workspaceで
+File: Set Workspaceで
 
 (このディレクトリ)/vitis_workspace を選択してOK
 
@@ -72,7 +72,7 @@ $ vitis -s vitisnew.py
 
 (Vitisプロジェクト生成スクリプトを実行。ビルドも自動実行される)
 
-File: Open Workspaceで
+File: Set Workspaceで
 
 (このディレクトリ)/vitis_workspace を選択してOK
 
