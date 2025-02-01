@@ -1,8 +1,8 @@
-# Live Audio Example for AMD (Xilinx) Kria KV260 and KR260
+# Live Audio (HDMI Audio) Example for AMD (Xilinx) Kria KV260 and KR260
 
 ## About this Project
 
-This is an example project that uses the Live Audio and Live Video functions (control of video and audio output from HDMI from the FPGA) on the AMD (Xilinx) Kria KV260 and KR260.
+This is an HDMI audio and video output example project on the AMD (Xilinx) Kria KV260 and KR260.
 
 The project is executed in stand-alone (bare metal) mode.
 
@@ -20,7 +20,7 @@ In a Linux terminal,
 
 $ source "Vitis installation path"/settings64.sh
 
-(e.g. $ source /opt/Xilinx/Vitis/2023.2/settings64.sh )
+(e.g. $ source /opt/Xilinx/Vitis/2024.2/settings64.sh )
 
 $ cd "Path of this directory"
 

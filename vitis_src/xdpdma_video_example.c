@@ -28,7 +28,7 @@
 *
 ******************************************************************************/
 
-/* 11/26/24 Modified by miya */
+/* 02/01/25 Modified by miya */
 
 /***************************** Include Files *********************************/
 
@@ -260,9 +260,10 @@ int InitDpDmaSubsystem(Run_Config *RunCfgPtr)
 	XDpPsu_WriteReg(DpPsuPtr->Config.BaseAddr, XDPPSU_TX_AUDIO_CONTROL, 1);
 	usleep(10000);
 
-	/* Set the Audio Volume L, R, 0-255 */
-	XAVBuf_AudioMixerVolumeControl(AVBufPtr, 255, 255);
-
+	/* Set the Audio Volume */
+    // XAVBuf_AudioMixerVolumeControl(AVBufPtr, 255, 255);
+    // There is a bug in the Library XAVBuf_AudioMixerVolumeControl(). The register parameter specification is u16, but the function input parameter is u8.
+	XAVBuf_WriteReg(AVBufPtr->Config.BaseAddr, XAVBUF_AUD_MIXER_VOLUME_CONTROL, 0x20002000);
 	/* Configure Video pipeline for graphics channel */
 	XAVBuf_ConfigureGraphicsPipeline(AVBufPtr);
 	/* Configure the output video pipeline */

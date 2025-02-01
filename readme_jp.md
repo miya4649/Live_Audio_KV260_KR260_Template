@@ -1,6 +1,6 @@
-# Live Audio Example for AMD (Xilinx) Kria KV260 and KR260
+# Live Audio (HDMI Audio) Example for AMD (Xilinx) Kria KV260 and KR260
 
-AMD (Xilinx) Kria KV260, KR260用Live Audio サンプル・プロジェクト
+AMD (Xilinx) Kria KV260, KR260用Live Audio (HDMI Audio) サンプル・プロジェクト
 
 ## このスクリプトについて
 
@@ -20,7 +20,7 @@ Linuxのターミナルで
 
 $ source Vitisのインストールパス/settings64.sh
 
-(例: $ source /opt/Xilinx/Vitis/2023.2/settings64.sh )
+(例: $ source /opt/Xilinx/Vitis/2024.2/settings64.sh )
 
 $ cd このディレクトリのパス
 
